@@ -1,4 +1,4 @@
-# Pokemon <img src="https://cdn.emojidex.com/emoji/seal/Pokebola.png">
+# Pokemon <img src="https://cdn.emojidex.com/emoji/seal/Pokebola.png" width="24px">
 Desenvolvimento de uma aplicação chamada Pokemon, foi utilizado a API do Pokemon e a arquitetura MVVM.
 
 ## Índice
