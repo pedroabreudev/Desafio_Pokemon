@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.pedroabreudev.desafio_pokemon.R
 import com.pedroabreudev.desafio_pokemon.domain.Pokemon
 
@@ -26,21 +27,22 @@ class PokemonAdapter(
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = items[position]
 
-       // holder.bindView(item)
+        holder.bindView(item)
     }
 
-    class ViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) {
-        fun binView(item:Pokemon) = with(itemView) {
+    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bindView(item: Pokemon?) = with(itemView) {
             val pokemonImage = findViewById<ImageView>(R.id.pokemon_image)
             val pokemonName = findViewById<TextView>(R.id.pokemon_name)
             val pokemonNumber = findViewById<TextView>(R.id.pokemon_number)
 
-            pokemonName.text = item.name
-            pokemonNumber.text = "${item.number}"
+            item?.let {
+                Glide.with(itemView.context).load(it.imageUrl).into(pokemonImage)
 
+                pokemonName.text = item.name
+                pokemonNumber.text = "${item.number}"
+
+            }
         }
-
     }
-
-
 }
