@@ -7,7 +7,7 @@ Desenvolvimento de uma aplicação chamada Pokemon, foi utilizado a API do Pokem
 
 ## Sobre
 
-O app Pokemon permite a consulta dos pokemons.
+O app Pokemon apresenta uma listagem de pokemons.
 
 <img src="https://github.com/pedroabreudev/Desafio_Pokemon/blob/master/pokemon_app.gif">
 
