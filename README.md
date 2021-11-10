@@ -8,10 +8,9 @@ Desenvolvimento de uma aplicação chamada Pokemon, foi utilizado a API do Pokem
 ## Sobre
 
 O app Pokemon permite a consulta dos pokemons.
-  
-<!--- 
-<img src="https://github.com/pedroabreudev/Marvel_App/blob/main/Marvel.gif">
---->
+
+<img src="https://github.com/pedroabreudev/Desafio_Pokemon/blob/master/pokemon_app.gif">
+
 
 ## Tecnologias
 * *Kotlin*
